@@ -1,0 +1,181 @@
+.header
+{
+height:300px;
+width:1000px;
+margin-left:auto;
+margin-right:auto;
+background-color:#c54949;
+}
+.h
+{
+height:250px;
+width:1000px;
+}
+.logo
+{
+float:left;
+}
+.companyname
+{
+height:250px;
+width:650px;
+float:right;
+}
+.n
+{
+position:relative;
+top:100px;
+left:100px;
+font-size:44px;
+
+}
+.menu
+{
+height:50px;
+width:1000px;
+float:left;
+background-color:#000000;
+}
+.menu ul li
+{
+display:inline;
+padding:50px;
+}
+.menu ul a
+{
+text-decoration:none;
+font-size:24px;
+color:#FFFFFF;
+}
+.footer
+{
+height:50px;
+width:1000px;
+margin-left:auto;
+margin-right:auto;
+background-color:#000000;
+}
+.f
+{
+text-align:center;
+font-size:35px;
+color:#ffffff;
+font-style:italic;
+}
+.home
+{
+height:650px;
+width:1000px;
+margin-left:auto;
+margin-right:auto;
+background-color:#ffffff;
+}
+.img1
+{
+float:left;
+}
+.img2{
+float:right;
+}
+.heading
+{
+height:80px;
+width:1000px;
+float:left;
+background-color:#394a99;
+color:#FFFFFF;
+text-align:center;
+font-size:20px;
+}
+.para
+{
+height:250px;
+width:1000px;
+float:left;
+background-color:#7077b9;
+font-size:20px;
+}
+.about
+{
+height:650px;
+width:1000px;
+margin-left:auto;
+margin-right:auto;
+background-color:#ffffff;
+}
+.abt{
+    height:80px;
+    width:1000px;
+    float:left;
+    background-color:#394a99;
+    color:#ffffff;
+    text-align:center;
+    font-size:20px;
+}
+.bl1
+{
+float:left;
+}
+.img3
+{
+float:left;
+}
+.bl2
+{
+float:right;
+}
+.para{
+    height:370px;
+    width:1000px;
+    float:left;
+    background-color:#7077b9;
+    color:#ffffff;
+    text-align:left;
+    font-size:24px; 
+ 
+}
+.placement
+{
+height:650px;
+width:1000px;
+margin-left:auto;
+margin-right:auto;
+background-color:#7077b9;
+}
+.place{
+    height: 45px;
+    background-color: #394a99;
+}
+.contact{
+height:650px;
+width:1000px;
+margin-left:auto;
+margin-right:auto;
+background-color:#ffffff;
+}
+.address
+{
+height:300px;
+width:500px;
+float:left;
+text-align:center;
+font-size:24px;
+background-color:#c54949;
+}
+.contact1
+{
+height:300px;
+width:500px;
+float:right;
+background-color:#394a99;
+text-align:center;
+font-size:24px;}
+.adm
+{
+height:650px;
+width:1000px;
+margin-left:auto;
+margin-right:auto;
+background-color:#7077b9;
+text-align:center;
+}
