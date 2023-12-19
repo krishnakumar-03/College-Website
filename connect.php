@@ -1,20 +1,47 @@
 <?php
-
-$a=$_POST["n"];
-$b=$_POST["d"];
-$c=$_POST["g"];
-$d=$_POST["ten"];
-$e=$_POST["twe"];
-$f=$_POST["s"];
-$g=$_POST["a"];
-$h=$_POST["m"];
-$i=$_POST["w"];
-$con=mysqli_connect("localhost","root","");
-mysqli_select_db($con,"college");
-$sql=("insert into data(n,d,g,ten,twe,s,a,m,w) values('$a','$b','$c','$d','$e','$f','$g','$h','$i')");
+$con=mysqli_connect("db.lfmxuuepmhehiqnyitxz.supabase.co","postgres","dhvQffKUeVDEcWx2");
+$user=postgres 
+$password=[YOUR-PASSWORD] 
+$host=db.lfmxuuepmhehiqnyitxz.supabase.co 
+$port=5432 
+$dbname=postgres
+mysqli_select_db($con,"college-website");
+$sql=("insert into admission(name, dob, gender, ten, twe, dept, address, mobile, whatsapp) values('$a','$b','$c','$d','$e','$f','$g','$h','$i')");
 mysqli_query($con,$sql);
 echo("Registration completed successfully!!");
 
-include("admission.php");
-mysqli_close($con);
+$dbname = 'postgres';
+$host = 'db.lfmxuuepmhehiqnyitxz.supabase.co';
+$port = '5432';
+$user = 'postgres';
+$password = 'dhvQffKUeVDEcWx2';
+
+try {
+    $pdo = new PDO("pgsql:dbname=$dbname;host=$host;port=$port", $user, $password);
+
+    $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+
+    $a=$_POST["n"];
+    $b=$_POST["d"];
+    $c=$_POST["g"];
+    $d=$_POST["ten"];
+    $e=$_POST["twe"];
+    $f=$_POST["s"];
+    $g=$_POST["a"];
+    $h=$_POST["m"];
+    $i=$_POST["w"];
+    $stmt = $pdo->prepare('insert into admission(name, dob, gender, ten, twe, dept, address, mobile, whatsapp) values('$a','$b','$c','$d','$e','$f','$g','$h','$i')');
+    
+    
+    // Execute the prepared statement to insert data
+    $stmt->execute();
+
+    echo 'Data inserted successfully.';
+    include("admission.php");
+
+  
+} catch (PDOException $e) {
+    // Handle database connection or query errors
+    echo 'Connection failed: ' . $e->getMessage();
+}
 ?>
