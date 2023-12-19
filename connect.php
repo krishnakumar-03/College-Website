@@ -1,14 +1,4 @@
 <?php
-$con=mysqli_connect("db.lfmxuuepmhehiqnyitxz.supabase.co","postgres","dhvQffKUeVDEcWx2");
-$user=postgres 
-$password=[YOUR-PASSWORD] 
-$host=db.lfmxuuepmhehiqnyitxz.supabase.co 
-$port=5432 
-$dbname=postgres
-mysqli_select_db($con,"college-website");
-$sql=("insert into admission(name, dob, gender, ten, twe, dept, address, mobile, whatsapp) values('$a','$b','$c','$d','$e','$f','$g','$h','$i')");
-mysqli_query($con,$sql);
-echo("Registration completed successfully!!");
 
 $dbname = 'postgres';
 $host = 'db.lfmxuuepmhehiqnyitxz.supabase.co';
